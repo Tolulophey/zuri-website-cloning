@@ -275,7 +275,6 @@ footer > .bottom{
 
 .bottom > p {
     color: #fff;
-    font-family: Graphik;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -285,4 +284,18 @@ footer > .bottom{
 .bottom > a{
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width:400px) {
+    .impact, .home{
+        display: block;
+    }
+    .left, .right{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    nav, .line{
+        display: none;
+    }
 }

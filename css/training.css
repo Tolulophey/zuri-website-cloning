@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    background: rgb(255, 253, 245);
+    /* padding: 20px; */
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    /* left: auto; */
+    right: 0px;
+    z-index: 1100;
+    color: rgb(255, 255, 255);
+    background-color: #fffdf5;
+    /* background-color: aqua; */
+    padding: 0 20px;
+}
+
+.logo img{
+    width: 308px;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+nav a{
+    margin-right: 48px;
+    text-decoration: none;
+    color: #161617;
+}
+.enroll{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    position: relative;
+}
+.enroll img{
+    position: relative;
+    left: 25px;
+    width: 80px;
+    background-color: #e7332b;
+    border-radius: 100px;
+    margin-left: -50px;
+    padding: 10px;
+}
+.enroll a {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    width: 150px;
+    background: #e7332b;
+    border-radius: 50px;
+    /* padding: 10px 0; */
+    text-decoration: none;
+
+}
+
+.enroll a > button{
+    color: #fff;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+/* 
+img{
+    width: 300px;
+} */
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    padding-top:200px;
+    max-width: 1440px;
+}
+.section1 .text {
+    text-align: center;
+    margin-top: -100px;
+    padding-left: 16px;
+    padding-top: 16px;
+    max-width: 50%;
+    padding-bottom: 30px;
+}
+.section1 .left-image, .section1 .right-image{
+    max-width: 25%;
+}
+.section1 .left-image > img{
+    mix-blend-mode: darken;
+    width: 125%;
+}
+.section1 .right-image > img{
+    mix-blend-mode: darken;
+    width: 110%;
+    margin-left: -26px;
+}
+.text p:first-child{
+    color: #e7332b;
+    line-height: 130%;
+}
+.text p:nth-child(2){
+    color: #1b1a20;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 49px;
+
+}
+.text p:nth-child(3){
+    color: #1b1a20;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 40px;
+    font-size: 18px;
+    width: 68%;
+    margin: auto;
+
+}
+
+.text a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: #e7332b;
+    border-radius: 20px;
+    width: 150px;
+    margin: auto;
+    text-decoration: none;
+}
+.text a button{
+    color: #fff; 
+    line-height: 24px;
+    padding: 10px;
+    justify-content: center;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about div{
+    width: calc(100%/3);
+}
+.left p:first-child{
+    padding-left: 16px;
+    color: #1b1a20;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.mid{
+  display: flex;
+  justify-content: center;
+}
+.mid > img {
+    mix-blend-mode: darken;
+    width: 55%;
+    
+}
+.right{
+    text-align: right;
+}
+.right p{
+    padding-left: 16px;
+    color: #1b1a20;
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 400;
+}
+.show-more{
+    color: #79cca1;
+}
+.why{
+    margin: 50px;
+}
+.top{
+    display: flex;
+    margin: 10px 0;
+}
+.why-left{
+    width: 60%;
+}
+.why-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-wire{
+    display: flex;
+    justify-content: center;
+}
+.why-wire img {
+    margin-top: 1;
+    width:15%;
+}
+.details p:first-child{
+    color: #e7332b;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.details > p:nth-child(2){
+   color: #1b1a20;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 40px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.card{
+    width: calc(94%/3);
+    margin: 10px 1%;
+    background-color: #fff;
+    color: #1b1a20;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    border-radius: 18px;
+    padding: 58px 48px 93px 50px;
+    
+}
+.card > img{
+    display: flex;
+    float: right;
+    width: 42%;
+    margin: -58px -48px 0 0;
+
+}
+.one{
+    background-color: #e7332b;
+    color: #fff;
+}
+.number{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.reason{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top:32px ;
+    padding-bottom: 36px;
+    line-height: 130%;
+}
+.description{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+
+}
+.others{
+    width: 100%;
+    background-color: rgb(231, 51, 43);
+    color: #fff;
+    margin-top:149px
+}
+.others-wire{
+    display: flex;
+    justify-content: center;
+}
+.others-wire img{
+    width: 15%;
+}
+.others-explained{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    padding: 0 5%;
+}
+.left-others{
+    width: 40%;
+}
+
+.left-others > .det1{
+    line-height: 130%;
+    font-size: 18px;
+    font-weight: 400;
+}
+.left-others > .det2{
+    line-height: 130%;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+.left-others > .det3{
+    line-height: 130%;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 35px;
+}
+
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.benefit{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 5px 15px;
+    border-radius: 79px;
+    border: 2px solid #fff;
+    color: #fff;
+    filter: drop-shadow(0 11px 22px rgba(231,51,43,.1));
+    font-size: 15px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 11px;
+    width: 45%;
+    margin: 10px 2.5%;
+
+}
+.benefit img{
+    margin-right: 10px;
+}
+.right-others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.right-others img{
+    width: 80%;
+}
+
+.dots{
+    padding: 35px;
+    width: 10%;
+}
+
+#stacks, #faqs{
+    display: none;
+}
