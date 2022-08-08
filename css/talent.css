@@ -24,7 +24,7 @@ header{
     background-color: #fff;
     padding: 0 94px;
 }
-.logo{
+header > .logo{
     margin-right: auto;
 }
 .headings{
@@ -93,6 +93,18 @@ section{
     padding-bottom: 100px;
 
 }
+.pop-up {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    left: 50%;
+    padding: 70px 44px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 35%;
+}
 .impact{
     display: flex;
     background-image: url(https://talent.zuri.team/static/media/bgsection2.063bd869082548bafa74.png);
@@ -159,7 +171,7 @@ section{
     position: relative;
 }
 .right > img{
-    width: 70%;
+    width: 80%;
 }
 .line{
     position:absolute;
@@ -239,21 +251,25 @@ section{
 footer{
     width: 100%;
     background-color: rgb(22, 22, 23);
-    padding:40px 20px;
+    padding-top: 80px;
 }
 footer > .top {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
     margin-bottom: 20px;
     padding-left: 16px;
 }
 
-.top > a {
+.top > .logo{
     display: flex;
     width: 50%;
     justify-content: center
+}
+.top > .logo > a .img{
+    width: 80%;
 }
 .social-media{
     display: flex;
@@ -270,6 +286,9 @@ footer > .top {
 
 footer > .bottom{
     display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
     justify-content: space-between;
 }
 
@@ -286,16 +305,154 @@ footer > .bottom{
     text-decoration: none;
 }
 
-@media screen and (max-width:400px) {
-    .impact, .home{
+@media screen and (max-width:899px){
+     nav{
+        display: none;
+    }
+}
+@media screen and (max-width:900px), (max-width:1100px) {
+   
+    .home{
         display: block;
+     }
+     .home > .left{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+     }
+    .home > .right{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+     .right .line{
+        display: none;
+     }
+     .impact .left{
+        text-align: center;
+     }
+     .home-details, .impact-head{
+        width: 90%;
+     }
+     .head{
+        text-align: center;
+     }
+     .talent, .work{
+        align-items: center;
+     }
+     .talent > p{
+        width: 23%;
+        font-size: 20px;
+        
+     }
+     .work > p{
+        width: 15%;
+        font-size: 20px
+        
+     }
+     .reasons .reason{
+        width: 48%;
+        margin-right: 2%
+     }
+     .reasons .reason:last-child{
+        width: 98%;
+     }
+}
+@media screen and (max-width:700px){
+    .impact{
+        display: block;
+    }
+    .right{
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        /* background-color: #161617; */
+        margin: 0 auto;
+    }
+    .talent > p{
+        width: 30%;
+        margin: 15px;
+        font-size: 20px;
+        
+     }
+     .work > p{
+        width: 30%;
+        margin: 15px;
+        font-size: 20px
+        
+     }
+     .reasons .reason{
+       font-size: 20px;
+     }
+     
+}
+@media screen and (max-width:300px), (max-width:400px), (max-width:500px) {
+    header {
+       display: flex;
+       padding: 20px;
+    }
+    .impact, .home{
+        justify-content: center;
+        width: 100%;
     }
     .left, .right{
         width: 100%;
-        padding: 20px 0;
+        margin: auto;
+        /* padding: 20px 0; */
     }
-
-    nav, .line{
-        display: none;
+    .head {
+    font-size: 35px;
+    font-weight: 700;
     }
+    .home-details, .impact-head {
+    width: 100%;
+    }
+    .thick {
+    position: absolute;
+    width: 100px;
+    right: 10px;
+    top: 60px;
+    }
+    .talents > p {
+    max-width: 100%;
+    }
+    .countries{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .talent, .work{
+        width: 100%;
+     }
+    main >.talents > .talent > p{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+     }
+     .work > p.test{
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        margin: 10px; 
+     }
+     .reasons .reason{
+        width: 100%;
+     }
+     footer > .top, footer > .bottom{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     footer .logo {
+        padding-bottom: 10px;
+     }
+     .cc{
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+     }
 }
