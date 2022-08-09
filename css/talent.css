@@ -462,16 +462,17 @@ footer > .bottom{
         margin-bottom: 10px;
      }
      button.button1,  button.button2 {
-    line-height: 19px;
-    padding: 8px 25px;
-    border: none;
-    cursor: pointer;
-}
-.button button {
-    padding: 20px;
-    width: 50%;
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
-}
+        line-height: 19px;
+        padding: 8px 25px;
+        border: none;
+        cursor: pointer;
+    }
+    .button button {
+        padding: 20px;
+        width: 50%;
+        font-size: 12px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: none;
+    }
 }
