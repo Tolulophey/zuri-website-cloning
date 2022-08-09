@@ -340,6 +340,9 @@ footer > .bottom{
      .home-details, .impact-head{
         width: 90%;
      }
+     .left > .button{
+        justify-content: center;
+     }
      .head{
         text-align: center;
      }
@@ -417,8 +420,8 @@ footer > .bottom{
     .thick {
     position: absolute;
     width: 100px;
-    right: 10px;
-    top: 60px;
+    right: 0;
+    top: 50px;
     }
     .talents > p {
     max-width: 100%;
