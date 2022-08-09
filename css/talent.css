@@ -44,15 +44,13 @@ nav a{
 }
 
 .button{
-    margin-top: 50px;
+    margin-top: 30px;
+    width: 100%;
     justify-content: center;
     display: flex;
 }
 .button button{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 64px; */
+    min-width: 64px;
     padding: 20px;
     margin-right: 10px;
     cursor: pointer;
@@ -195,7 +193,7 @@ section{
     margin: 30px 0;
 }
 .talent > p, .work > p{
-    max-width: 25%;
+    width: 25%;
     margin-right:10px ;
     background-color: #fff;
     border-radius: 8px;
@@ -404,10 +402,10 @@ footer > .bottom{
         justify-content: center;
         width: 100%;
     }
-    .left, .right{
+    .impact > .left, .impact > .right, .home > .left, .home > .right{
         width: 100%;
         margin: auto;
-        /* padding: 20px 0; */
+        padding: 20px 0;
     }
     .head {
     font-size: 35px;
@@ -428,21 +426,24 @@ footer > .bottom{
     .countries{
         max-width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .countries > img {
+    width: 50px;
     }
     .talent, .work{
         width: 100%;
-     }
-    main >.talents > .talent > p{
-        display: block;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  .talent > p, .work > p{
+        padding: 0;
+        margin: 0;
+        width: 46%;
         padding: 10px;
         font-size: 20px;
-     }
-     .work > p.test{
-        display: block;
-        width: 100%;
-        font-size: 18px;
-        margin: 10px; 
+        margin:10px 2%;
      }
      .reasons .reason{
         width: 100%;
@@ -460,4 +461,17 @@ footer > .bottom{
         margin-top: 20px;
         margin-bottom: 10px;
      }
+     button.button1,  button.button2 {
+    line-height: 19px;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
+}
+.button button {
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
 }
