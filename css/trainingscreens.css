@@ -96,6 +96,7 @@
     .card, .track {
     width: 100%;
     margin-right: 0;
+    background-color: aqua;
     }
     .benefit{
         width: 46%;
@@ -144,6 +145,25 @@
     }
     .logo > a > img{
         width: 80%;
+    }
+    
+    .enroll{
+        width: 150px;
+    }
+    .enroll img{
+        width: 50px;
+        border-radius: 100px;
+        margin-left: -30px;
+        padding: 10px;
+    }
+    .enroll a {
+        display: flex;
+        align-items: flex-end;
+        height: 40px;
+        width: 150px;
+        background: #e7332b;
+        border-radius: 30px;
+        text-decoration: none;
     }
     .section1 .left-image > img {
         width: 100%;

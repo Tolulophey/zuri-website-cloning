@@ -20,6 +20,7 @@ hr{
 section{
     width: 90%;
     margin: auto;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -89,7 +90,6 @@ nav a{
     text-decoration: none;
 
 }
-
 .enroll a > button{
     color: #fff;
     line-height: 24px;
@@ -231,7 +231,7 @@ nav a{
 }
 
 .why{
-    margin: 50px;
+    margin: 50px auto;
     padding-top: 20px;
 }
 .top{
