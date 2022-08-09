@@ -120,6 +120,32 @@ nav a{
     mix-blend-mode: darken;
     width: 125%;
 }
+.section1-line{
+    display: flex;
+    justify-content: right;
+    margin-left: -20px;
+    margin-bottom: 28px;
+    margin-right: 32px;
+}
+.section1-line > img{
+    width: 33%;
+}
+.section1-wire{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 50%;
+}
+.section1-wire > img {
+    width: 25%;
+}
+.male-face{
+    margin-left: -200px;;
+    margin-top: -141px;
+    max-width: 1440px;
+    position: absolute;
+    width: 54px;
+}
 .section1 .right-image > img{
     mix-blend-mode: darken;
     width: 110%;
@@ -136,7 +162,7 @@ nav a{
     font-size: 49px;
 
 }
-.text p:nth-child(3){
+.text .text-text{
     color: #1b1a20;
     font-weight: 400;
     line-height: 130%;
@@ -144,7 +170,6 @@ nav a{
     font-size: 18px;
     width: 68%;
     margin: auto;
-
 }
 
 .text a{
@@ -231,7 +256,6 @@ nav a{
     justify-content: center;
 }
 .why-wire img {
-    margin-top: 1;
     width:15%;
 }
 .details p:first-child{
@@ -302,12 +326,11 @@ nav a{
     justify-content: center;
 }
 .others-wire img{
-    width: 15%;
+    width: 23%;
 }
 .others-explained{
     display: flex;
     width: 100%;
-    padding: 20px 0;
     padding: 0 5%;
 }
 .left-others{
@@ -330,6 +353,28 @@ nav a{
     font-size: 18px;
     font-weight: 400;
     padding-top: 35px;
+}
+.left-others > .enroll {
+   margin: 20px 0;
+   width: 100%;
+}
+.left-others > .enroll > a {
+    /* display: Block; */
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background: #fff;
+    text-transform: uppercase;
+    min-width: 64px;
+    border-radius: 71px;
+}
+.left-others > .enroll > a > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    color: #e7332b;
+
 }
 
 .benefits{
@@ -577,10 +622,10 @@ nav a{
 
 }
 .full-time{
-    margin-right: 20px;
+    margin-right: 4%;
 }
 .full-time, .part-time{
-    width: 50%;
+    width: 48%;
     background-color: #1b1a20;
     color: #fff;
     border: 1px solid #fff;

@@ -1,0 +1,182 @@
+@media screen and (max-width:900px), (max-width:1100px) {
+    nav{
+        display: none;
+    }
+    .section1{
+        display: block;
+     }
+     .section1 > .right-image{
+        display: none;
+     }
+     .section1 > .text{
+        margin: auto;
+        max-width: 100%;
+     }
+    
+     .text p:nth-child(2){
+        font-size: 39px;
+     }
+     .male-face{
+        margin-left: -42%;
+     }
+     .section1 > .left-image{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+     }
+   .section1 .left-image > img{
+        width: 76%;
+    }
+     .right .line{
+        display: none;
+     }
+     .card, .track{
+        width: 46%;
+        margin: 20px 2%;
+     }
+    .others-explained{
+        display: block;
+    }
+    .others-wire{
+        justify-content: flex-end;
+        margin-right: 128px;
+    }
+    .left-others {
+    width: 100%;
+    }
+    .benefit {
+    width: 25%;
+    margin: 0;
+    }
+    .right-others{
+        width: 100%;
+    }
+    .right-others img{
+        width: 100%;
+    }
+    .scope > .description{
+        max-width: 100%;
+        font-size: 35px;
+    }
+    .get-started-details > .second{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:700px){
+    .about{
+       flex-direction: column;
+       align-items: center;
+    }
+    .about div{
+        width: 100%;
+        text-align: center;
+    }
+    .left p:first-child{
+        font-size: 24px;
+    }
+    .mid img{
+        width: 42%;
+    }
+    .right p{
+        font-size: 18px;
+    }
+    .why-left{
+        width: 100%;
+    }
+    .why-right{
+        display: none;
+    }
+    .details > p:nth-child(2){
+        font-size: 24px;
+    }
+    .card, .track {
+    width: 100%;
+    margin-right: 0;
+    }
+    .benefit{
+        width: 46%;
+        margin: 15px 2%;
+    }
+    .scope > .description{
+        font-size: 24px;
+        width: 60%;
+    }
+    .scope-wire > img {
+        margin-top: -13px;
+        width: 43%;
+    }
+    .faq-wire{
+        width: 23%;
+        margin-bottom: 20px;
+    }
+    .faqs{
+        width: 100%;
+    }
+    .faqs-section > .other{
+        flex-direction: column;
+    }
+    .programs{
+        display: block;
+    }
+    .full-time, .part-time{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .get-started-details > .second{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width:300px), (max-width:400px), (max-width:500px) {
+    .section1 .left-image > img {
+        width: 100%;
+    }
+    .text p:nth-child(2) {
+        font-size: 28px;
+    }
+    .text .text-text {
+        width: 100%;
+    }
+    .male-face{
+        display: none;
+    }
+    .section1-wire > img {
+        width: 22%;
+    }
+    .left p:first-child {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .mid img {
+        width: 52%;
+    }
+    .benefit img {
+    width: 25%;
+    margin-right: 6px;
+    }
+    .scope > .description {
+        width: 100%;
+    }
+    .get-started-details > .second {
+        font-size: 26px;
+    }
+    footer > .top, footer > .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    footer > .bottom > p{
+        order: 2;
+    }
+    .top > .social-media{
+        margin: 10px 0;
+    }
+    .other-bot{
+        flex-direction: column;
+        align-items: center;
+        /* margin-bottom: 20px; */
+    }
+    .other-bot > .policy{
+        order: 2;
+        margin: 30px 0;
+    }
+}
