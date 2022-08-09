@@ -15,6 +15,7 @@ body{
 hr{
     width: 90%;
     margin: auto;
+    opacity: 0.5;
 }
 section{
     width: 90%;
@@ -55,6 +56,7 @@ button{
     background-color: transparent;
     border: none;
     padding: 10px;
+    cursor: pointer;
 }
 nav a{
     margin-right: 48px;
@@ -96,11 +98,6 @@ nav a{
     justify-content: center;
     display: flex;
 }
-
-/* 
-img{
-    width: 300px;
-} */
 
 .section1{
     display: flex;
@@ -173,6 +170,7 @@ img{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-top: 70px;
 }
 .about div{
     width: calc(100%/3);
@@ -206,8 +204,10 @@ img{
 .show-more{
     color: #79cca1;
 }
+
 .why{
     margin: 50px;
+    padding-top: 20px;
 }
 .top{
     display: flex;
@@ -221,6 +221,10 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.why-right > img {
+    width: 65%;
+    mix-blend-mode: darken;
 }
 .why-wire{
     display: flex;
@@ -238,10 +242,9 @@ img{
 }
 .details > p:nth-child(2){
    color: #1b1a20;
-    font-size: 20px;
     font-weight: 700;
     line-height: 130%;
-    font-size: 40px;
+    font-size: 30px;
 }
 .cards{
     display: flex;
@@ -291,7 +294,8 @@ img{
     width: 100%;
     background-color: rgb(231, 51, 43);
     color: #fff;
-    margin-top:149px
+    margin-top:149px;
+    padding-top: 50px;
 }
 .others-wire{
     display: flex;
@@ -368,7 +372,7 @@ img{
     width: 10%;
 }
 .scope{
-    padding-top: 70px;
+    padding-top: 75px;
 }
 .scope > .heading{
     color: #e7332b;
@@ -528,9 +532,184 @@ img{
     width: 80px;
 }
 
+.structure > .top-images > .top{
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.top-images > .top > img{
+    width: 13%;
+}
+.structure > .top-images > .bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -65px;;
+}
+ .top-images > .bottom > img{
+    width: 12%;
+ }
+.structure-details{
+    text-align: center;
+}
+.structure-details > .head{
+    margin-top: -50px;
+    color: #e7332b;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.structure-details > .heading{
+    padding-bottom: 20px;
+    color: #1b1a20;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.structure-details > .normal-text {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 60px;
+}
+.programs{
+    display: flex;
+    justify-content: space-between;
 
-.get-started, .structure{
-    display: none;
+}
+.full-time{
+    margin-right: 20px;
+}
+.full-time, .part-time{
+    width: 50%;
+    background-color: #1b1a20;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 65px;
+    box-shadow: 0 31px 60px rgba(231,51,43,.2);
+    height: 740px;
+    padding: 64px 48px;
+}
+.p-track{
+    padding-bottom: 18px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.p-details{
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    width: 90%;
+}
+.sub-head {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 140%;
+    width: 90%;
+}
+.programs ul{
+    margin-left: 15px;
+}
+.programs ul> li{
+    font-size: 16px;
+    width: 90%;
+    line-height: 140%;
+    font-weight: 400;
+}
+.programs ul> li a{
+    color: #fff;
+}
+.post-pogram, .phases, .available{
+    margin-top: 20px;
+}
+.bottom-images > .top {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -57px;
+    margin-top: -72px;
+    position: relative;
+    z-index: -1;
+}
+.bottom-images > .top > img{
+    width: 16%;
+}
+.bottom-images > .bottom > img{
+    width: 10%;
+    margin-bottom: 27px;
+}
+.get-started {
+    /* padding-top: 30px; */
+    width: 90%;
+    position: relative;
+    background-color: rgb(231, 51, 43);
+    color: #fff;
+    border-radius: 24px;
+    text-align: center;
+}
+.get-started-details > .first  {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 70px;
+    width: 100%;
+}
+.get-started-details > .second {
+    font-size: 55px;
+    font-weight: 700;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    width: 50%;
+}
+.get-started-details > .enroll {
+   margin: auto;
+}
+.get-started-details > .enroll > a {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    min-width: 64px;
+}
+.get-started-details > .enroll > a > button {
+    background: #fff;
+    border-radius: 71px;
+    color: #e7332b;
+    padding: 10px 32px;
+}
+.ttop-images > .bottom > img {
+    left: 15%;
+    top: 0;
+    margin-top: 65px;
+    padding: 6px 16px;
+    position: absolute;
+    width: 12%;
+}
+.ttop-images > .top > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 11%;
+}
+.bbt-images{
+    display: flex;
+}
+
+.bbt-images > .left{
+    display: flex;
+}
+.bbt-images > .left > img{
+    width: 120%;
+}
+.bbt-images > .right{
+    display: flex;
+    width: 180%;
+    justify-content: flex-end
+}
+.bbt-images > .right > img{
+    left: 0;
+    width: 13%
 }
 footer{
     width: 90%;

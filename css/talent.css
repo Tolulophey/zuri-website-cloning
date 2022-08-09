@@ -218,6 +218,7 @@ section{
     background-color: rgb(255, 248, 229);
     padding-bottom: 80px;
     width: 100%;
+    padding-top: 70px;
 }
 .why-hire > p {
     text-align: center;
@@ -242,6 +243,10 @@ section{
     padding: 30px;
     margin-top: 20px;
     margin-right:calc(5%/6);
+}
+.reasons .reason:hover{
+    background-color: black;
+    color:#fff;
 }
 .reason img{
     width: 50px;

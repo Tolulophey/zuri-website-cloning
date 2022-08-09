@@ -10,6 +10,7 @@
     <link rel="”preload”" href="/fonts/Graphik-Regular.woff2">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"/>
     <link rel="stylesheet" href="./css/training.css">
+    <link href="./img/favicon.png" rel="icon" sizes="16x16 32x32" type="image/png">
 </head>
 <body>
    <header>
@@ -282,30 +283,41 @@
     </section>
     <hr>
     <section class="structure">
-        <img src="https://training.zuri.team/section7wire.svg" alt="wire">
-        <p class="head">Structure</p>
-        <p class="heading">Program Structure</p>
-        <p>There are 2 broad paths in this program based on your availability.</p>
+        <div class="top-images">
+            <div class="top">
+                 <img class="left" src="https://training.zuri.team/section7wire.svg" alt="wire">
+            </div>
+            <div class="bottom">
+                <img class="right" src="https://training.zuri.team/Star1.svg" alt="star">
+            </div>
+        </div>
+        <div class="structure-details">
+            <p class="head">Structure</p>
+            <p class="heading">Program Structure</p>
+            <p class="normal-text">There are 2 broad paths in this program based on your availability.</p>
+        </div>
         <div class="programs">
             <div class="full-time">
-                <p>Full-time</p>
-                <p>Requires at least 25 hours weekly on program content.</p>
+                <p class="p-track">Full-time</p>
+                <p class="p-details">Requires at least 25 hours weekly on program content.</p>
                 <div class="available">
-                    <p>Available Tracks:</p>
+                    <p class="sub-head">Available Tracks:</p>
                     <ul>
-                        <li>Full Stack: Backend (Python, JavaScript), Frontend (HTML, CSS, JavaScript) & DevOps</li>
+                        <li>Full Stack: Backend (Python, JavaScript), 
+                            <p>Frontend (HTML, CSS, JavaScript) & DevOps</p>
+                        </li>
                         <li>Design: Figma, Adobe XD</li>
                     </ul>
                 </div>
                 <div class="phases">
-                    <p>Phases:</p>
+                    <p class="sub-head">Phases:</p>
                     <ul>
                         <li>Training Phase</li>
                         <li>Project Phase</li>
                     </ul>
                 </div>
                 <div class="post-pogram">
-                    <p>Post Program:</p>
+                    <p class="sub-head">Post Program:</p>
                     <ul>
                         <li>Certification of Attendance</li>
                         <li><a href="https://internship.zuri.team/">Zuri Internship</a></li>
@@ -322,29 +334,33 @@
                 </div>
             </div>
             <div class="part-time">
-                <p>Part-time</p>
-                <p>Requires at least 11 hours weekly on program content.</p>
+                <p class="p-track">Part-time</p>
+                <p class="p-details">Requires at least 11 hours weekly on program content.</p>
                 <div class="available">
-                    <p>Available Tracks:</p>
+                    <p class="sub-head">Available Tracks:</p>
                     <ul>
                         <li>Frontend:</li>
                         <p>HTML, CSS, JavaScript</p>
+                        <br>
                         <li>Backend: Can only select one backend language</li>
                         <p>Python,</p>
                         <p>PHP,</p>
                         <p>JavaScript</p>
+                        <br>
                         <li>Design:</li>
                         <p>Figma</p>
+                        <br>
                     </ul>
                 </div>
                 <div class="phases">
-                    <p>Phases:</p>
+                    <p class="sub-head">Phases:</p>
                     <ul>
                         <li>Training Phase</li>
+                        <br>
                     </ul>
                 </div>
                 <div class="post-pogram">
-                    <p>Post Program:</p>
+                    <p class="sub-head">Post Program:</p>
                     <ul>
                         <li>Certification of Attendance</li>
                         <li>Zuri Internship</li>
@@ -352,13 +368,40 @@
                 </div>
 
             </div>
-            <img class="tracks-dot" src="https://training.zuri.team/circle.png" alt="">
+        </div>
+        <div class="bottom-images">
+            <div class="top">
+                <img src="https://training.zuri.team/circle.png" alt="dots">
+            </div>
+            <div class="bottom">
+                <img class="tracks-dot" src="https://training.zuri.team/circle.png" alt="">
+            </div>
         </div>
     </section>
     <section class="get-started">
-        <p>Get Started</p>
-        <p>Break into the tech industry like a Pro</p>
-        <a href="https://training.zuri.team/enroll"><button>Enroll Now</button></a>
+        <div class="ttop-images">
+            <div class="top">
+                <img src="https://training.zuri.team/bend1.svg" alt="" class="bend1">
+            </div>
+            <div class="bottom">
+                <img src="https://training.zuri.team/round.svg" alt="" class="round">
+            </div>
+            </div>
+        <div class="get-started-details">
+            <p class="first">Get Started</p>
+            <p class="second">Break into the tech industry like a Pro</p>
+            <div class="enroll">
+                <a href="https://training.zuri.team/enroll"><button>Enroll Now</button></a>
+            </div>
+        </div>
+        <div class="bbt-images">
+            <div class="left">
+                <img src="https://training.zuri.team/curve2.svg" alt="bens3">
+            </div>
+            <div class="right">
+                <img src="https://training.zuri.team/mains.png" alt="bend2">
+            </div>
+        </div>
     </section>
    </main>
    <footer>
@@ -381,13 +424,21 @@
    </footer>
    <script>
     let questions = document.querySelectorAll(".question");
-    questions.forEach(function(question) {
-        var faq = question.parentElement;
-        var answer = faq.querySelector(".answer");
-        question.addEventListener("click", function() {
+        // questions.forEach(function(question) {
+        // var faq = question.parentElement;
+        // var answer = faq.querySelector(".answer");
+        // question.addEventListener("click", function() {
+        //     answer.classList.toggle('active');
+        // });
+        // });
+        for(var i=0; i < questions.length; i++){
+            const question = questions[i];
+            const faq = question.parentElement;
+            const answer = faq.querySelector(".answer");
+            question.addEventListener("click", function() {
             answer.classList.toggle('active');
         });
-    });
+        }
    </script>
 </body>
 </html>
