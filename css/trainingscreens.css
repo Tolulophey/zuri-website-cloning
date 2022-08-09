@@ -61,6 +61,10 @@
     .get-started-details > .second{
         font-size: 45px;
     }
+    *{
+        margin: 0;
+        padding: 0;
+    }
 }
 @media screen and (max-width:700px){
     .about{
@@ -125,8 +129,22 @@
     .get-started-details > .second{
         font-size: 36px;
     }
+   
 }
 @media screen and (max-width:300px), (max-width:400px), (max-width:500px) {
+    header{
+        justify-content: space-between;
+    }
+    .logo, .headings{
+       width: 50%;
+    }
+    .logo > a{
+        display: block;
+        width: 100%;
+    }
+    .logo > a > img{
+        width: 80%;
+    }
     .section1 .left-image > img {
         width: 100%;
     }
@@ -179,4 +197,5 @@
         order: 2;
         margin: 30px 0;
     }
+    
 }
