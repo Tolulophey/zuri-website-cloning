@@ -111,6 +111,24 @@
                 <button class="button2">Join Talent pool</button>
             </div>
         </section>
+        <section class="pop-up-message">
+            <div class="pop-up pop-up1">
+                <h2>Talent Recuritment</h2>
+                <p>We will love to discuss your business and your talent needs.</p>
+                <div class="button">
+                    <a href="https://forms.gle/QFsTDVg2EhpY32Pd9"><button class="button1">Fill this form</button></a>
+                    <p>OR</p>
+                    <a href="https://calendly.com/zuri-team/consult-with-seyi?month=2022-04"><button class="button1">Book a Consultation</button></a>
+                </div>
+            </div>
+            <div class="pop-up pop-up2">
+                <h2>Join Talent Pool</h2>
+                <p>Interested in joining our Talent Pool?</p>
+                <div class="button">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenlbLaRmpPCRzby9DJ71pyChTBurIhcCFOyiZxEX1IMwxXtg/viewform"><button class="button1">Click here to sign up</button></a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="top">
@@ -129,5 +147,38 @@
             <a class="mail" href="mailto:talent@zuri.team">talent@zuri.team</a>
         </div>
     </footer>
+    <script>
+        const button1s = document.getElementsByClassName('button1');
+        const button2s = document.getElementsByClassName('button2');
+        const popUp1 = document.querySelector('.pop-up1');
+        const popUp2 = document.querySelector('.pop-up2');
+        const body = document.querySelector('body');
+        const message = document.querySelector('.pop-up-message');
+
+        for(var i = 0; i < button1s.length; i++){
+            var button1 = button1s[i];
+            button1.onclick = function(){
+                popUp1.className = 'pop-up pop-up1 active';
+                message.className = 'pop-up-message active';
+                body.className = 'active';
+            }
+            
+        }
+        for(var i = 0; i < button2s.length; i++){
+            var button2 = button2s[i];
+            button2.onclick = function(){
+                message.className = 'pop-up-message active';
+                popUp2.className = 'pop-up pop-up2 active';
+                body.className = 'active';
+            }
+        }
+
+        message.onclick = function(){
+                popUp1.className = 'pop-up pop-up1';
+                popUp2.className = 'pop-up pop-up2';
+                message.className = 'pop-up-message';
+                body.className = '';
+        }
+    </script>
 </body>
 </html>
