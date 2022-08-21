@@ -306,6 +306,7 @@ footer > .bottom{
     position: fixed;
     align-items: center;
     justify-content: center;
+    z-index: 2000;
     inset: 0px;
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-tap-highlight-color: transparent;
