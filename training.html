@@ -330,11 +330,79 @@
                     <p class="sub-head">Post Program:</p>
                     <ul>
                         <li>Certification of Attendance</li>
-                        <li><a href="https://internship.zuri.team/">Zuri Internship</a></li>
-                        <li>Laptop Reward (upgrade or new one)</li>
-                        <li>Job Placement</li>
+                        <div class="pop-up">
+                            <div class="title">
+                                <li><a href="https://internship.zuri.team/">Zuri Internship</a></li>
+                                <img class="pop-up-button" src="https://training.zuri.team/clarity.svg" alt="pop-up">
+                            </div>
+                            <div class="explain">
+                                <div class="pop-up-message">
+                                    <div class="heading">
+                                        <h3>Zuri Internship Is Optional</h3>
+                                        <img class="close" src="https://training.zuri.team/eva_close-outline.svg" alt="close">
+                                    </div>
+                                    <div class="body">
+                                        <p>What do we mean by this?</p>
+                                        <p>The Zuri Internship is another level of training that places the participants in a work simulation. It is not paid work; it’s a short training program to get participants ready for actual jobs. There will be cash rewards for a job well done.</p>     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-up">
+                            <div class="title">
+                                <li>Laptop Reward (upgrade or new one)</li>
+                                <img class="pop-up-button" src="https://training.zuri.team/clarity.svg" alt="pop-up">
+                            </div>
+                            <div class="explain">
+                                <div class="pop-up-message">
+                                    <div class="heading">
+                                        <h3>Laptop Reward (Upgrade Or New One)</h3>
+                                        <img class="close" src="https://training.zuri.team/eva_close-outline.svg" alt="close">
+                                    </div>
+                                    <div class="body">
+                                        <p>What do we mean by this?</p>
+                                        <p>We will be working with our partners on how to get laptops for exceptional participants who genuinely need a better device. This is not for everyone, and we will only do this if we can get partners to fund / or donate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pop-up">
+                            <div class="title">
+                                <li>Job Placement</li>
+                                <img class="pop-up-button" src="https://training.zuri.team/clarity.svg" alt="pop-up">
+                            </div>
+                            <div class="explain">
+                                <div class="pop-up-message">
+                                    <div class="heading">
+                                        <h3>Job Reward:</h3>
+                                        <img class="close" src="https://training.zuri.team/eva_close-outline.svg" alt="close">
+                                    </div>
+                                    <div class="body">
+                                        <p>What do we mean by this?</p>
+                                        <p>This is a beginner-focused program; we will not be exclusively recommending everyone for jobs or job placement. We will not be placing everyone in our talent pool. We will select very few who are exceptional, smart and able to out-perform their pairs and recommend them for possible employment or further internships. You might still have to go through other forms of interview depending on the employer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <li>Zuri Talent Pool</li>
-                        <li>More Training:</li>
+                        <div class="pop-up">
+                            <div class="title">
+                                <li>More Training:</li>
+                                <img class="pop-up-button" src="https://training.zuri.team/clarity.svg" alt="pop-up">
+                            </div>
+                            <div class="explain">
+                                <div class="pop-up-message">
+                                    <div class="heading">
+                                        <h3>More Training</h3>
+                                        <img class="close" src="https://training.zuri.team/eva_close-outline.svg" alt="close">
+                                    </div>
+                                    <div class="body">
+                                        <p>What do we mean by this?</p>
+                                        <p>We will be partnering with more companies to provide more training to participants in this track. However, this is subject to the partners. If we cannot get partners in any of the items listed below, we will not be doing the training.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <p>Interview Prep</p>
                         <p>Algorithms & Data Structure</p>
                         <p>Freelance Setup & Training</p>
@@ -449,6 +517,29 @@
             answer.classList.toggle('active');
         });
         }
+        const popUpButtons = document.getElementsByClassName('pop-up-button');
+        const explains = document.getElementsByClassName('explain');
+        const body = document.querySelector('body');
+
+        for(var i = 0; i < popUpButtons.length; i++){
+            var  button =  popUpButtons[i];
+            var  explain =  explains[i];
+            var title = button.parentElement;
+            var pop_up = title.parentElement;
+            var message = pop_up.querySelector('.pop-up-message')
+            explain.onclick = function(){
+                message.className = 'pop-up-message';
+                explain.className = 'explain'
+                body.className = '';
+            }
+            button.onclick = function(){
+                message.className = 'pop-up-message active';
+                explain.className = 'explain active'
+                body.className = 'active';
+            }
+             
+        }
    </script>
+   <script src="./script.js"></script>
 </body>
 </html>

@@ -312,7 +312,6 @@ footer > .bottom{
     -webkit-tap-highlight-color: transparent;
 }
 .pop-up-message.active{
-    display: block;
     display: flex;
 }
 .pop-up1, .pop-up2{
