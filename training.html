@@ -517,12 +517,12 @@
         const closers = document.getElementsByClassName('close')
 
         for(var i = 0; i < popUpButtons.length; i++){
-            var button =  popUpButtons[i];
-            var explain =  explains[i];
-            var closer = closers[i];
-            var title = button.parentElement;
-            var pop_up = title.parentElement;
-            var message = pop_up.querySelector('.pop-up-message')
+            const button =  popUpButtons[i];
+            const explain =  explains[i];
+            const closer = closers[i];
+            const title = button.parentElement;
+            const pop_up = title.parentElement;
+            const message = pop_up.querySelector('.pop-up-message')
             button.onclick = function(event){
                 message.className = 'pop-up-message active';
                 explain.className = 'explain active'
@@ -533,14 +533,18 @@
                 explain.className = 'explain'
                 body.className = '';
             }
+            message.onclick = function(e){
+                event.stopImmediatePropagation();
+            } 
             closer.onclick = function(){
                 message.className = 'pop-up-message';
                 explain.className = 'explain'
                 body.className = '';
-            }
-            message.onclick = function(e){
-                event.stopImmediatePropagation();
             }  
+        }
+        for(var i = 0; i < closers.length; i++){
+            console.log('clicked')
+            
         }
    </script>
    <script src="./script.js"></script>
