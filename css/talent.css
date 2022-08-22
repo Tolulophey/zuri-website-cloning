@@ -361,9 +361,6 @@ footer > .bottom{
 }
 
 @media screen and (max-width:900px), (max-width:1100px) {
-    nav{
-        display: none;
-    }
     .home{
         display: block;
      }
@@ -416,6 +413,11 @@ footer > .bottom{
      .reasons .reason:last-child{
         width: 98%;
      }
+}
+@media screen and (max-width: 900px) {
+    nav{
+        display: none;
+    }
 }
 @media screen and (max-width:700px){
     .impact{

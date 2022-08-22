@@ -157,19 +157,27 @@
 
         for(var i = 0; i < button1s.length; i++){
             var button1 = button1s[i];
-            button1.onclick = function(){
+            button1.onclick = function(event){
+                event.stopImmediatePropagation();
                 popUp1.className = 'pop-up pop-up1 active';
                 message.className = 'pop-up-message active';
                 body.className = 'active';
             }
+            popUp1.onclick = function(e){
+                event.stopImmediatePropagation();
+            } 
             
         }
         for(var i = 0; i < button2s.length; i++){
             var button2 = button2s[i];
             button2.onclick = function(){
+                event.stopImmediatePropagation(event);
                 message.className = 'pop-up-message active';
                 popUp2.className = 'pop-up pop-up2 active';
                 body.className = 'active';
+            }
+            popUp2.onclick = function(e){
+                event.stopImmediatePropagation();
             }
         }
 

@@ -452,7 +452,7 @@
                 <img src="https://training.zuri.team/circle.png" alt="dots">
             </div>
             <div class="bottom">
-                <img class="tracks-dot" src="https://training.zuri.team/circle.png" alt="">
+                <img class="tracks-dot" src="https://training.zuri.team/circle.png" alt="dots">
             </div>
         </div>
     </section>
@@ -502,13 +502,6 @@
    </footer>
    <script>
     let questions = document.querySelectorAll(".question");
-        // questions.forEach(function(question) {
-        // var faq = question.parentElement;
-        // var answer = faq.querySelector(".answer");
-        // question.addEventListener("click", function() {
-        //     answer.classList.toggle('active');
-        // });
-        // });
         for(var i=0; i < questions.length; i++){
             const question = questions[i];
             const faq = question.parentElement;
@@ -517,27 +510,37 @@
             answer.classList.toggle('active');
         });
         }
+
         const popUpButtons = document.getElementsByClassName('pop-up-button');
         const explains = document.getElementsByClassName('explain');
         const body = document.querySelector('body');
+        const closers = document.getElementsByClassName('close')
 
         for(var i = 0; i < popUpButtons.length; i++){
-            var  button =  popUpButtons[i];
-            var  explain =  explains[i];
+            var button =  popUpButtons[i];
+            var explain =  explains[i];
+            var closer = closers[i];
             var title = button.parentElement;
             var pop_up = title.parentElement;
             var message = pop_up.querySelector('.pop-up-message')
+            button.onclick = function(event){
+                message.className = 'pop-up-message active';
+                explain.className = 'explain active'
+                body.className = 'active';
+            }
             explain.onclick = function(){
                 message.className = 'pop-up-message';
                 explain.className = 'explain'
                 body.className = '';
             }
-            button.onclick = function(){
-                message.className = 'pop-up-message active';
-                explain.className = 'explain active'
-                body.className = 'active';
+            closer.onclick = function(){
+                message.className = 'pop-up-message';
+                explain.className = 'explain'
+                body.className = '';
             }
-             
+            message.onclick = function(e){
+                event.stopImmediatePropagation();
+            }  
         }
    </script>
    <script src="./script.js"></script>

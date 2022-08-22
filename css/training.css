@@ -12,6 +12,9 @@ body{
     font-family: Graphik;
     /* padding: 20px; */
 }
+body.active{
+    overflow: hidden;
+}
 hr{
     width: 90%;
     margin: auto;
@@ -821,12 +824,11 @@ footer > .bottom{
     color: #161617;
     border-radius: 10px;
     left: 50%;
-    padding: 70px 44px;
+    padding: 80px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    width: 40%;
+    width: 37%;
 }
 .pop-up-message.active{
     display: flex;
@@ -835,4 +837,16 @@ footer > .bottom{
 .pop-up-message .heading{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pop-up-message > .body {
+    color: #585757;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 22px;
+}
+.pop-up-message > .body > p:first-child{
+    margin-bottom: 10px;
 }
